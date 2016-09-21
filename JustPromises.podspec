@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JustPromises"
-  s.version      = "2.0.0"
+  s.version      = "3.0.0"
   s.summary      = "A lightweight and thread-safe implementation of Promises & Futures in Objective-C for iOS and OS X."
 
   s.description  = <<-DESC
@@ -67,7 +67,7 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "5.0"
+  s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.7"
   s.watchos.deployment_target = "3.0"
 
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/justeat/JustPromises.git", :tag => "2.0.0" }
+  s.source       = { :git => "https://github.com/justeat/JustPromises.git", :tag => "3.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,11 +89,25 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "JustPromises", "JustPromises/**/*.{h,m}"
+  s.source_files  = "JustPromises", "JustPromises/**/*.{h,m}", "JustPromiseSwift/**/*.{h,m,swift}"
   s.exclude_files = "JustPromises/Exclude"
 
   # s.public_header_files = "JustPromises/**/*.h"
 
+  # --- SubSpec -----------
+
+  s.subspec "Objective-C" do |sub|
+    sub.source_files = "JustPromises/**/*.{h,m}"
+    sub.pod_target_xcconfig = { 'SWIFT_VERSION' => '2.3' }
+  end
+
+  s.subspec "Swift" do |sub|
+    sub.source_files = "JustPromiseSwift/**/*.{h,m,swift}"
+    sub.pod_target_xcconfig = { 'SWIFT_VERSION' => '2.3' }
+  end
+
+  # ――― Swift Version ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '2.3' }
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
