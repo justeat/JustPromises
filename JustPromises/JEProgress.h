@@ -54,7 +54,7 @@ typedef void (^JEProgressHandler)(JEProgress *progress);
 /**
  *  This method is intended to set a progress description on the receiver.
  *
- *  @param description The progress description.
+ *  @param progressDescription The progress description.
  */
 - (void)updateProgressDescription:(NSString *)progressDescription;
 
