@@ -138,6 +138,7 @@ extension Promise {
     /// - parameter queue: The queue to await the promise on.
     ///
     /// - returns: The same promise will be returned, allowing chaining.
+    @discardableResult
     public func await(onQueue queue: OperationQueue = sharedPromiseQueue) -> Promise<FutureType> {
         queue.addOperation(self)
         return self
@@ -146,6 +147,7 @@ extension Promise {
     /// The promise will be added to the main queue.
     ///
     /// - returns: The same promise will be returned, allowing chaining.
+    @discardableResult
     public func awaitOnMainQueue() -> Promise<FutureType>  {
         return await(onQueue: .main)
     }
@@ -159,6 +161,7 @@ extension Promise {
     /// - parameter executionBlock: The block to create and return the next Promise
     ///
     /// - returns: The next created Promise, allows chaining.
+    @discardableResult
     public func continuation<NextFutureType>(onQueue queue: OperationQueue = sharedPromiseQueue, withBlock executionBlock: (Promise<FutureType>) -> Promise<NextFutureType>) -> Promise<NextFutureType> {
         
         let nextPromise = executionBlock(self)
@@ -260,6 +263,7 @@ extension Array where Element: Operation {
     /// - parameter executionBlock: The block to create and return the next Promise
     ///
     /// - returns: The next created Promise, allows chaining
+    @discardableResult
     public func continuation<NextFutureType>(onQueue queue: OperationQueue = sharedPromiseQueue, withBlock executionBlock: () -> Promise<NextFutureType>) -> Promise<NextFutureType> {
         
         let nextPromise = executionBlock()

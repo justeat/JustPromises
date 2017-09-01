@@ -30,17 +30,24 @@
 		4F74B0ED1B47CF6500595442 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F74B0E81B47CF6500595442 /* main.m */; };
 		4F74B0F01B47CFD100595442 /* JEDemoExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F74B0EF1B47CFD100595442 /* JEDemoExamples.m */; };
 		4F74B0F11B47D03C00595442 /* JustPromises.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBCFFDE1B46DC9F007BD426 /* JustPromises.framework */; };
-		4FBC00041B46DCE2007BD426 /* JEFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FBCFFFE1B46DCE2007BD426 /* JEFuture.h */; };
+		4FBC00041B46DCE2007BD426 /* JEFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FBCFFFE1B46DCE2007BD426 /* JEFuture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FBC00051B46DCE2007BD426 /* JEFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBCFFFF1B46DCE2007BD426 /* JEFuture.m */; };
-		4FBC00061B46DCE2007BD426 /* JEProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FBC00001B46DCE2007BD426 /* JEProgress.h */; };
+		4FBC00061B46DCE2007BD426 /* JEProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FBC00001B46DCE2007BD426 /* JEProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FBC00071B46DCE2007BD426 /* JEProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC00011B46DCE2007BD426 /* JEProgress.m */; };
-		4FBC00081B46DCE2007BD426 /* JustPromises.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FBC00021B46DCE2007BD426 /* JustPromises.h */; };
+		4FBC00081B46DCE2007BD426 /* JustPromises.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FBC00021B46DCE2007BD426 /* JustPromises.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FBC000E1B46DD1B007BD426 /* JEFutureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC000B1B46DD1B007BD426 /* JEFutureTests.m */; };
 		4FBC000F1B46DD1B007BD426 /* JEProgressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC000C1B46DD1B007BD426 /* JEProgressTests.m */; };
 		4FBCFFE81B46DC9F007BD426 /* JustPromises.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBCFFDE1B46DC9F007BD426 /* JustPromises.framework */; };
-		4FCF53A01B47F5480025D30D /* JEFuture+JEDotNotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FCF539E1B47F5480025D30D /* JEFuture+JEDotNotation.h */; };
+		4FCF53A01B47F5480025D30D /* JEFuture+JEDotNotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FCF539E1B47F5480025D30D /* JEFuture+JEDotNotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FCF53A11B47F5480025D30D /* JEFuture+JEDotNotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF539F1B47F5480025D30D /* JEFuture+JEDotNotation.m */; };
 		4FCF53A31B47F5820025D30D /* JEFuture_DotNotationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF53A21B47F5820025D30D /* JEFuture_DotNotationTests.m */; };
+		B142DDC71E64389A00946479 /* JustPromisesSwift_iOSKVOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142DDC01E6435DF00946479 /* JustPromisesSwift_iOSKVOTests.swift */; };
+		B142DDC81E6438A200946479 /* JustPromisesSwift_macOSKVOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142DDC21E6436CC00946479 /* JustPromisesSwift_macOSKVOTests.swift */; };
+		B142DDC91E6438AB00946479 /* JustPromisesSwift_tvOSKVOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142DDC41E6436FA00946479 /* JustPromisesSwift_tvOSKVOTests.swift */; };
+		B142DDCA1E6438CC00946479 /* KVOPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142DDBE1E6435D800946479 /* KVOPromise.swift */; };
+		B142DDCB1E6438CE00946479 /* KVOPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142DDBE1E6435D800946479 /* KVOPromise.swift */; };
+		B142DDCC1E6438CF00946479 /* KVOPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142DDBE1E6435D800946479 /* KVOPromise.swift */; };
+		B142DDCD1E6438D000946479 /* KVOPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142DDBE1E6435D800946479 /* KVOPromise.swift */; };
 		B1FA8F9D1E4DD5FF00D217DB /* JustPromisesSwift_iOSArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA8F9C1E4DD5FF00D217DB /* JustPromisesSwift_iOSArrayTests.swift */; };
 		B1FA8F9F1E4DE17D00D217DB /* JustPromisesSwift_macOSArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA8F9E1E4DE17D00D217DB /* JustPromisesSwift_macOSArrayTests.swift */; };
 		B1FA8FA11E4DE29800D217DB /* JustPromisesSwift_tvOSArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA8FA01E4DE29800D217DB /* JustPromisesSwift_tvOSArrayTests.swift */; };
@@ -129,6 +136,10 @@
 		4FCF53A21B47F5820025D30D /* JEFuture_DotNotationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JEFuture_DotNotationTests.m; sourceTree = "<group>"; };
 		B13CA05B1DD0D81900E4F710 /* README_ObjC.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README_ObjC.md; sourceTree = "<group>"; };
 		B13CA05C1DD0D82C00E4F710 /* README_Swift.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README_Swift.md; sourceTree = "<group>"; };
+		B142DDBE1E6435D800946479 /* KVOPromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVOPromise.swift; sourceTree = "<group>"; };
+		B142DDC01E6435DF00946479 /* JustPromisesSwift_iOSKVOTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustPromisesSwift_iOSKVOTests.swift; sourceTree = "<group>"; };
+		B142DDC21E6436CC00946479 /* JustPromisesSwift_macOSKVOTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustPromisesSwift_macOSKVOTests.swift; sourceTree = "<group>"; };
+		B142DDC41E6436FA00946479 /* JustPromisesSwift_tvOSKVOTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustPromisesSwift_tvOSKVOTests.swift; sourceTree = "<group>"; };
 		B1FA8F9C1E4DD5FF00D217DB /* JustPromisesSwift_iOSArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustPromisesSwift_iOSArrayTests.swift; sourceTree = "<group>"; };
 		B1FA8F9E1E4DE17D00D217DB /* JustPromisesSwift_macOSArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustPromisesSwift_macOSArrayTests.swift; sourceTree = "<group>"; };
 		B1FA8FA01E4DE29800D217DB /* JustPromisesSwift_tvOSArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustPromisesSwift_tvOSArrayTests.swift; sourceTree = "<group>"; };
@@ -228,6 +239,7 @@
 			children = (
 				2F5829611DF4A7DE0033C3D4 /* AsyncOperation.swift */,
 				2F5829621DF4A7DE0033C3D4 /* Promise.swift */,
+				B142DDBE1E6435D800946479 /* KVOPromise.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -267,6 +279,7 @@
 				2F5829691DF4A7DE0033C3D4 /* Info.plist */,
 				2F58296A1DF4A7DE0033C3D4 /* JustPromisesSwift_iOSPromiseTests.swift */,
 				B1FA8F9C1E4DD5FF00D217DB /* JustPromisesSwift_iOSArrayTests.swift */,
+				B142DDC01E6435DF00946479 /* JustPromisesSwift_iOSKVOTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -295,6 +308,7 @@
 				2F5829701DF4A7DE0033C3D4 /* Info.plist */,
 				2F5829711DF4A7DE0033C3D4 /* JustPromisesSwift_macOSPromiseTests.swift */,
 				B1FA8F9E1E4DE17D00D217DB /* JustPromisesSwift_macOSArrayTests.swift */,
+				B142DDC21E6436CC00946479 /* JustPromisesSwift_macOSKVOTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -323,6 +337,7 @@
 				2F5829771DF4A7DE0033C3D4 /* Info.plist */,
 				2F5829781DF4A7DE0033C3D4 /* JustPromisesSwift_tvOSPromiseTests.swift */,
 				B1FA8FA01E4DE29800D217DB /* JustPromisesSwift_tvOSArrayTests.swift */,
+				B142DDC41E6436FA00946479 /* JustPromisesSwift_tvOSKVOTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -697,6 +712,7 @@
 					};
 					4FBCFFDD1B46DC9F007BD426 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0820;
 					};
 					4FBCFFE61B46DC9F007BD426 = {
 						CreatedOnToolsVersion = 7.0;
@@ -812,6 +828,7 @@
 			files = (
 				2F5829851DF4A8280033C3D4 /* AsyncOperation.swift in Sources */,
 				2F5829861DF4A8280033C3D4 /* Promise.swift in Sources */,
+				B142DDCA1E6438CC00946479 /* KVOPromise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,6 +838,7 @@
 			files = (
 				2F58297F1DF4A7F80033C3D4 /* JustPromisesSwift_iOSPromiseTests.swift in Sources */,
 				B1FA8F9D1E4DD5FF00D217DB /* JustPromisesSwift_iOSArrayTests.swift in Sources */,
+				B142DDC71E64389A00946479 /* JustPromisesSwift_iOSKVOTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,6 +848,7 @@
 			files = (
 				2F5829871DF4A8290033C3D4 /* AsyncOperation.swift in Sources */,
 				2F5829881DF4A8290033C3D4 /* Promise.swift in Sources */,
+				B142DDCB1E6438CE00946479 /* KVOPromise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,6 +858,7 @@
 			files = (
 				2F5829891DF4A82B0033C3D4 /* AsyncOperation.swift in Sources */,
 				2F58298A1DF4A82B0033C3D4 /* Promise.swift in Sources */,
+				B142DDCC1E6438CF00946479 /* KVOPromise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,6 +866,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B142DDC91E6438AB00946479 /* JustPromisesSwift_tvOSKVOTests.swift in Sources */,
 				2F5829831DF4A8150033C3D4 /* JustPromisesSwift_tvOSPromiseTests.swift in Sources */,
 				B1FA8FA11E4DE29800D217DB /* JustPromisesSwift_tvOSArrayTests.swift in Sources */,
 			);
@@ -857,6 +878,7 @@
 			files = (
 				2F58298B1DF4A82C0033C3D4 /* AsyncOperation.swift in Sources */,
 				2F58298C1DF4A82C0033C3D4 /* Promise.swift in Sources */,
+				B142DDCD1E6438D000946479 /* KVOPromise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -864,6 +886,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B142DDC81E6438A200946479 /* JustPromisesSwift_macOSKVOTests.swift in Sources */,
 				2F5829811DF4A80A0033C3D4 /* JustPromisesSwift_macOSPromiseTests.swift in Sources */,
 				B1FA8F9F1E4DE17D00D217DB /* JustPromisesSwift_macOSArrayTests.swift in Sources */,
 			);
@@ -1339,6 +1362,7 @@
 		4FBCFFF61B46DC9F007BD426 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1354,6 +1378,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.justeat.JustPromises;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1363,6 +1389,7 @@
 		4FBCFFF71B46DC9F007BD426 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1378,6 +1405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.justeat.JustPromises;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
