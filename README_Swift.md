@@ -2,7 +2,7 @@
 
 A lightweight and thread-safe implementation of Promises & Futures in Swift 3 for iOS, macOS, watchOS and tvOS with 100% code coverage.
 
-#Overview
+# Overview
 
 A Promise represents the future value of an asynchronous task. It can be intended as an object that acts as a proxy for a result that is initially unknown, usually because the computation of its value is yet incomplete.
 
@@ -23,7 +23,7 @@ The main features of JustPromises for Swift are listed below.
 More information at [the Wikipedia page](http://en.wikipedia.org/wiki/Futures_and_promises).
 
 
-##Importing
+## Importing
 
 To import just the Swift version of JustPromises, in your Podfile:
 ```
@@ -35,12 +35,12 @@ In your .swift files:
 import JustPromises
 ```
 
-##Usage of Promise
+## Usage of Promise
 
 Please refer to the example Swift Playground to have an idea of how to use use Promises and chaining Promises together.
 
 
-###API Overview
+### API Overview
 
 A Promise is an asynchronous operation that will enventually resolve a future state. A Promise's `futureState` property will start in an unresolved state, but at some point in the future will update that state to be either:
 
@@ -84,7 +84,7 @@ let queue = OperationQueue()
 networkPromise.await(onQueue: queue)
 ```
 
-###Continuation
+### Continuation
 
 Work can be done after a `Promise` has finished by using a continuation.
 
@@ -98,7 +98,7 @@ There are multiple ways that you can use a continuation:
 Each continuation will take an operation queue to perform on, by default it will use a shared background queue.
 
 
-####Continue with next Promise
+#### Continue with next Promise
 ```
 networkPromise.continuation { previousPromise in
     
@@ -124,7 +124,7 @@ networkPromise.continuation { previousPromise in
 }
 ```
 
-####Handle result and allow further chaining
+#### Handle result and allow further chaining
 ```
 networkPromise.continuationWithResult(onQueue: .main) { result in
 
@@ -140,7 +140,7 @@ networkPromise.continuationWithResult(onQueue: .main) { result in
 }
 ```
 
-####Handle error and allow further chaining
+#### Handle error and allow further chaining
 ```
 networkPromise.continuationWithError(onQueue: .main) { error in
 
@@ -155,7 +155,7 @@ networkPromise.continuationWithError(onQueue: .main) { error in
 }
 ```
 
-####Handle the outcome of the promise without further chaining
+#### Handle the outcome of the promise without further chaining
 ``` 
 networkPromise.continuation(onQueue: .main) { promise in
 
@@ -165,11 +165,11 @@ networkPromise.continuation(onQueue: .main) { promise in
 
 ```
 
-###Continuation from a group of Promises
+### Continuation from a group of Promises
 
 You can also add a continuation on an array of `Promise`s, and in fact an array of any `Operation`s. This continuation can return a `Promise` to allow chaining of further `Promise`s, or just be a self contained block for execution.
 
-####Continue Operation Array with new Promise
+#### Continue Operation Array with new Promise
 ```
 let promises: [Operation] = [fetchHousePricesPromise, fetchCrimeDataPromise]
 
@@ -184,7 +184,7 @@ let dataMergePromise = promises.continuation() {
 
 ```
 
-####Continue Operation Array with Block
+#### Continue Operation Array with Block
 ```
 let promises: [Operation] = [parallelTask1, parallelTask2]
 
@@ -195,7 +195,7 @@ promises.continuation() {
 
 ```
 
-##Other implementations
+## Other implementations
 
 These are some third-party libraries mainly used by the community.
 
@@ -204,13 +204,13 @@ These are some third-party libraries mainly used by the community.
 - [RXPromise](https://github.com/couchdeveloper/RXPromise)
 
 
-##Contributing
+## Contributing
 
 We've been adding things ONLY as they are needed, so please feel free to either bring up suggestions or to submit pull requests with new GENERIC functionalities.
 
 Don't bother submitting any breaking changes or anything without unit tests against it. It will be declined.
 
-##Licence
+## Licence
 
 JustPromises is released under the Apache 2.0 License.
 
