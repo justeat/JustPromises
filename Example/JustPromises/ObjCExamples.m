@@ -91,7 +91,7 @@ static NSString *const kFoursquareApiClientSecret = @"OYPK3LZEXLSDQE1IG4RM5JXBX1
       }]
      
      // set the continuation, executed either way, acts as a finally block
-     setContinuation:^(JEFuture *fut)
+     onQueue:dispatch_get_main_queue() setContinuation:^(JEFuture *fut)
      {
          if ([fut hasError])
          {
@@ -127,7 +127,7 @@ static NSString *const kFoursquareApiClientSecret = @"OYPK3LZEXLSDQE1IG4RM5JXBX1
           return [weakSelf saveToDisk:jsonDict filename:@"results"];
       }]
      
-     setContinuation:^(JEFuture *fut)
+     onQueue:dispatch_get_main_queue() setContinuation:^(JEFuture *fut)
      {
          // this acts as finally block, always executed no matter what happened to the previous futures (i.e. if they succeeded or not)
          if ([fut hasError])
