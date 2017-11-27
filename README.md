@@ -1,5 +1,7 @@
 ![](JustPromises_logo.jpg)
 
+### Warning: This library is not supported anymore by Just Eat and therefore considered deprecated. For Swift code, instead of JustPromises, the Just Eat iOS team adopted [Promis](https://github.com/albertodebortoli/promis).
+
 A lightweight and thread-safe implementation of Promises & Futures in both Objective-C and Swift 3 for iOS, macOS, watchOS and tvOS with 100% code coverage.
 
 
