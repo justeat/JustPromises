@@ -6,10 +6,8 @@
 //  Copyright (c) 2014 JUST EAT. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
-#import "JEProgress.h"
-
-#import "JEFuture.h"
+@import XCTest;
+@import JustPromises;
 
 static NSString *const kTestExpectationDescription = @"test expectation";
 static NSString *const kTestExpectationDescription2 = @"test expectation 2";

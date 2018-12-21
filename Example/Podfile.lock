@@ -1,9 +1,7 @@
 PODS:
-  - JustPromises (3.1.1):
-    - JustPromises/Objective-C (= 3.1.1)
-    - JustPromises/Swift (= 3.1.1)
-  - JustPromises/Objective-C (3.1.1)
-  - JustPromises/Swift (3.1.1)
+  - JustPromises (3.2.0):
+    - JustPromises/Objective-C (= 3.2.0)
+  - JustPromises/Objective-C (3.2.0)
 
 DEPENDENCIES:
   - JustPromises (from `../`)
@@ -13,8 +11,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JustPromises: d05bfdb8306f18183ff8f361dab1fbe2c527100a
+  JustPromises: c149b1e101de6b0fccd5f3bdeda385ebe33c401e
 
-PODFILE CHECKSUM: b1ea51646afdb5d3ce073c934834607e9732f79a
+PODFILE CHECKSUM: a6c987f8947fa0ad8e8ba13606cef9fdcd006279
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.5.3

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JustPromises"
-  s.version      = "3.1.1"
+  s.version      = "3.2.0"
   s.summary      = "A lightweight and thread-safe implementation of Promises & Futures in Objective-C for iOS and OS X."
 
   s.description  = <<-DESC
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = 'JustPromises/Classes/**/*'
   
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "10.0"
   s.osx.deployment_target = "10.9"
   s.watchos.deployment_target = "3.0"
   s.tvos.deployment_target = "9.0"
@@ -35,11 +35,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'JustPromises/Classes/Objective-C/*.{h,m}'
   end
 
-  s.subspec "Swift" do |ss|
-    ss.source_files = 'JustPromises/Classes/Swift/*.swift'
-  end
-
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
+  s.swift_version = '4.2'
   s.requires_arc = true
 
 end
