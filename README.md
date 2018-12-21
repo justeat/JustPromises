@@ -2,7 +2,7 @@
 
 ### Warning: This library is not supported anymore by Just Eat and therefore considered deprecated. For Swift code, instead of JustPromises, the Just Eat iOS team adopted [Promis](https://github.com/albertodebortoli/promis).
 
-A lightweight and thread-safe implementation of Promises & Futures in both Objective-C and Swift 3 for iOS, macOS, watchOS and tvOS with 100% code coverage.
+A lightweight and thread-safe implementation of Promises & Futures in both Objective-C for iOS, macOS, watchOS and tvOS with 100% code coverage.
 
 
 # Overview
@@ -16,20 +16,15 @@ Promises are useful to standardize the API of asynchronous operations. They help
 
 ## Installing via Cocoapods
 
-To import just the Swift version of JustPromises, in your Podfile:
+To import JustPromises, in your Podfile:
 ```
 pod 'JustPromises'
 ```
 
 
-## Swift 3
+## Usage
 
-Just Promises has been completely re-built from the ground up for Swift 3. [Further details in the Swift specific README](README_Swift.md)
-
-
-## Objective-C
-
-The legacy Objective-C version is still available. [Further details in the Objective-C specific README](README_ObjC.md)
+Latest version of JustPromises is Objective-C only and removes the previous Swift version. [Further details in the Objective-C specific README](README_ObjC.md)
 
 
 ## Other implementations

@@ -6,8 +6,8 @@
 //  Copyright © 2015 JUST EAT. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
-#import "JEFuture+JEDotNotation.h"
+@import XCTest;
+@import JustPromises;
 
 static NSString *const kTestErrorDomain = @"TestError";
 
