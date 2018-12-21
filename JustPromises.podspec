@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
 
   s.subspec "Objective-C" do |ss|
-    ss.source_files = 'JustPromises/Classes/Objective-C/*.{h,m}'
+    ss.source_files = 'JustPromises/Classes/**/*.{h,m}'
   end
 
   s.swift_version = '4.2'
