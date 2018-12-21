@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JustPromises: c149b1e101de6b0fccd5f3bdeda385ebe33c401e
+  JustPromises: ebe478f94308f466b173b68798e6d4ed26464977
 
 PODFILE CHECKSUM: a6c987f8947fa0ad8e8ba13606cef9fdcd006279
 

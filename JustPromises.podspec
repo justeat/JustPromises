@@ -27,15 +27,11 @@ Pod::Spec.new do |s|
   s.source_files  = 'JustPromises/Classes/**/*'
   
   s.ios.deployment_target = "10.0"
-  s.osx.deployment_target = "10.9"
-  s.watchos.deployment_target = "3.0"
-  s.tvos.deployment_target = "9.0"
 
   s.subspec "Objective-C" do |ss|
     ss.source_files = 'JustPromises/Classes/**/*.{h,m}'
   end
 
-  s.swift_version = '4.2'
   s.requires_arc = true
 
 end
